@@ -10,6 +10,6 @@
 
     <include file="$(find aiscbot_firmware)/launch/aisclidar.launch" />
     
-    <node name="diff" pkg="aisc_firmware" type="diff.py" />
+    <node name="diff" pkg="aiscbot_firmware" type="diff.py" />
  
 </launch>
