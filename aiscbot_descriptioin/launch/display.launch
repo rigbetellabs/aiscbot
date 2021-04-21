@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+
+<launch>
+
+	<arg default="$(find aiscbot_descriptioin)/urdf/aisc.xacro" name="model"/>
+	<arg default="true" name="gui"/>	
+
+	<param command="$(find xacro)/xacro $(arg model)" name="robot_description"/>
+	<param name="use_gui" value="$(arg gui)"/>
+	<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+	<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+	
+</launch>
