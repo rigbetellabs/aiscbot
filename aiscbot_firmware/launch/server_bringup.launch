@@ -3,7 +3,7 @@
 <launch>
     <node name="cartographer_node" pkg="cartographer_ros" type="cartographer_node" args="
           -configuration_directory
-              $(find tortoisebot_firmware)/config
+              $(find aiscbot_firmware)/config
           -configuration_basename lidar.lua" output="screen">
     </node>
 </launch>
