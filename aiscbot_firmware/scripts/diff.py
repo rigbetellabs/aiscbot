@@ -95,5 +95,5 @@ def listener():
     rospy.spin()
 
 if __name__== '__main__':
-    print('Tortoisebot Differential Drive Initialized')
+    print('AISCBOT Differential Drive Initialized')
     listener()

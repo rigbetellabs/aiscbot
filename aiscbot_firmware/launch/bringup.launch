@@ -8,7 +8,7 @@
 
     <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
 
-    <include file="$(find ydlidar_ros)/launch.myS2.launch" />
+    <include file="$(find ydlidar_ros)/launch/myS2.launch" />
 
     <!-- <include file="$(find aiscbot_firmware)/launch/aisclidar.launch" /> -->
     
