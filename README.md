@@ -18,5 +18,5 @@ roslaunch aiscbot_firmware bringup.launch
 
 roslaunch aiscbot_firmware server_bringup.launch
 
-roslaunch tortoisebot_navigation tortoisebot_navigation.launch
+roslaunch aiscbot_navigation aiscbot_navigation.launch
 
