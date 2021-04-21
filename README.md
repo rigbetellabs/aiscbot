@@ -8,7 +8,7 @@ roslaunch aiscbot_firmware bringup.launch
 
 roslaunch aiscbot_firmware server_bringup.launch
 
-roslaunch aiscbot_slam tortoisebot_slam.launch
+roslaunch aiscbot_slam aiscbot_slam.launch
 
 teleop
 
