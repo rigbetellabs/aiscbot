@@ -2,7 +2,7 @@
 <robot name="aiscbot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
 <xacro:include filename="$(find aiscbot_description)/urdf/materials.xacro" />
-<xacro:include filename="$(find aiscbot_description)/urdf/aiscbot.trans" />
+<!--<xacro:include filename="$(find aiscbot_description)/urdf/aiscbot.trans" />-->
 <xacro:include filename="$(find aiscbot_description)/urdf/aiscbot.gazebo" />
 
 <link name="base_link">
@@ -131,32 +131,32 @@
   </collision>
 </link>
 
-<joint name="Rev1" type="continuous">
+<joint name="Rev1" type="fixed">
   <origin rpy="0 0 0" xyz="0.06 -0.0515 0.0325"/>
   <parent link="base_link"/>
   <child link="wheel_rf_1"/>
-  <axis xyz="0.0 1.0 0.0"/>
+  <!--<axis xyz="0.0 1.0 0.0"/>-->
 </joint>
 
-<joint name="Rev2" type="continuous">
+<joint name="Rev2" type="fixed">
   <origin rpy="0 0 0" xyz="0.06 0.0515 0.0325"/>
   <parent link="base_link"/>
   <child link="wheel_lf_1"/>
-  <axis xyz="0.0 1.0 0.0"/>
+  <!--<axis xyz="0.0 1.0 0.0"/>-->
 </joint>
 
-<joint name="Rev3" type="continuous">
+<joint name="Rev3" type="fixed">
   <origin rpy="0 0 0" xyz="-0.06 -0.0515 0.0325"/>
   <parent link="base_link"/>
   <child link="wheel_rb_1"/>
-  <axis xyz="0.0 1.0 0.0"/>
+  <!--<axis xyz="0.0 1.0 0.0"/>-->
 </joint>
 
-<joint name="Rev4" type="continuous">
+<joint name="Rev4" type="fixed">
   <origin rpy="0 0 0" xyz="-0.06 0.0515 0.0325"/>
   <parent link="base_link"/>
   <child link="wheel_lb_1"/>
-  <axis xyz="0.0 1.0 0.0"/>
+  <!--<axis xyz="0.0 1.0 0.0"/>-->
 </joint>
 
 <joint name="Rigid5" type="fixed">
