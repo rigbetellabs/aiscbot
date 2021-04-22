@@ -12,6 +12,8 @@ roslaunch aiscbot_slam aiscbot_slam.launch
 
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 
+roslaunch aiscbot_slam view_sensors.launch
+
 # NAVIGATION
 
 roslaunch aiscbot_firmware bringup.launch
