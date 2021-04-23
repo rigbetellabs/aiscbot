@@ -2,7 +2,7 @@
 
 <launch>
 	
-    <param command="$(find xacro)/xacro $(find aiscbot_description)/urdf/aiscbot.xacro" name="robot_description"/>
+    <!--<param command="$(find xacro)/xacro $(find aiscbot_description)/urdf/aiscbot.xacro" name="robot_description"/>-->
 
     <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
 
