@@ -16,6 +16,8 @@
   <!-- Map server -->
   <!-- <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/> -->
 
+  <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros" type="cartographer_occupancy_grid_node" args="-resolution 0.01" /> 
+
   <!-- AMCL -->
   <include file="$(find aiscbot_navigation)/launch/amcl.launch">
     <arg name="initial_pose_x" value="$(arg x_pos)"/>
