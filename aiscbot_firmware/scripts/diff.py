@@ -47,8 +47,8 @@ def forward():
 
 def backward():
     print('going backward')
-    pwmL.ChangeDutyCycle(50)
-    pwmR.ChangeDutyCycle(50)
+    pwmL.ChangeDutyCycle(20)
+    pwmR.ChangeDutyCycle(20)
     GPIO.output(leftForward, GPIO.LOW)
     GPIO.output(rightForward, GPIO.LOW)
     GPIO.output(leftBackward, GPIO.HIGH)
