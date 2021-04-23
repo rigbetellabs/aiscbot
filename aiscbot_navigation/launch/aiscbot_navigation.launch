@@ -2,7 +2,7 @@
 
 <launch>
   <!-- Arguments -->
-  <arg name="map_file" default="$(find aiscbot_navigation)/map/my_map.yaml"/>
+  <arg name="map_file" default="$(find aiscbot_navigation)/my_map.yaml"/>
   <!--<arg name="x_pos" default="-0.2"/>
   <arg name="y_pos" default="0.0"/>
   <arg name="z_pos" default="0.005"/>-->
