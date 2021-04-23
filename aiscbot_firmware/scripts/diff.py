@@ -22,9 +22,9 @@ GPIO.setup(leftBackward, GPIO.OUT)
 GPIO.setup(rightForward, GPIO.OUT)
 GPIO.setup(rightBackward, GPIO.OUT)
 
-pwmL = GPIO.PWM(leftEn, 50)
+pwmL = GPIO.PWM(leftEn, 20)
 pwmL.start(0)
-pwmR = GPIO.PWM(rightEn, 50)
+pwmR = GPIO.PWM(rightEn, 20)
 pwmR.start(0)
 
 def stop():
@@ -38,8 +38,8 @@ def stop():
 
 def forward():
     print('going forward')
-    pwmL.ChangeDutyCycle(50)
-    pwmR.ChangeDutyCycle(50)
+    pwmL.ChangeDutyCycle(20)
+    pwmR.ChangeDutyCycle(20)
     GPIO.output(leftForward, GPIO.HIGH)
     GPIO.output(rightForward, GPIO.HIGH)
     GPIO.output(leftBackward, GPIO.LOW)
@@ -56,8 +56,8 @@ def backward():
 
 def left():
     print('turning left')
-    pwmL.ChangeDutyCycle(50)
-    pwmR.ChangeDutyCycle(50)
+    pwmL.ChangeDutyCycle(20)
+    pwmR.ChangeDutyCycle(20)
     GPIO.output(leftForward, GPIO.LOW)
     GPIO.output(leftBackward, GPIO.HIGH)
     GPIO.output(rightForward, GPIO.HIGH)
@@ -65,8 +65,8 @@ def left():
 
 def right():
     print('turning right')
-    pwmL.ChangeDutyCycle(50)
-    pwmR.ChangeDutyCycle(50)
+    pwmL.ChangeDutyCycle(20)
+    pwmR.ChangeDutyCycle(20)
     GPIO.output(leftForward, GPIO.HIGH)
     GPIO.output(leftBackward, GPIO.LOW)
     GPIO.output(rightForward, GPIO.LOW)
