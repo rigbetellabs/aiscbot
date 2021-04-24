@@ -3,7 +3,7 @@
 <launch>
   <!-- Arguments -->
   <!-- <arg name="map_file" default="/home/shubhu/catkin_ws/src/aiscbot/aiscbot_navigation/maps/pmap.yaml"/>   -->
-  <arg name="map_file" default="$(find rvbot_navigation)/maps/my_map.yaml"/>  
+  <arg name="map_file" default="$(find aiscbot_navigation)/maps/my_map.yaml"/>  
   <arg name="open_rviz" default="true"/>
   <arg name="move_forward_only" default="false"/>
 
