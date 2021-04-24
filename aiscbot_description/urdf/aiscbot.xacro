@@ -131,38 +131,71 @@
   </collision>
 </link>
 
+<joint name="Rigid5" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 0.0 0.12"/>
+  <parent link="base_link"/>
+  <child link="lidar_1"/>
+</joint>
+
+
+
+
+<!--
 <joint name="Rev1" type="fixed">
   <origin rpy="0 0 0" xyz="0.06 -0.0515 0.0325"/>
   <parent link="base_link"/>
   <child link="wheel_rf_1"/>
-  <!--<axis xyz="0.0 1.0 0.0"/>-->
 </joint>
 
 <joint name="Rev2" type="fixed">
   <origin rpy="0 0 0" xyz="0.06 0.0515 0.0325"/>
   <parent link="base_link"/>
   <child link="wheel_lf_1"/>
-  <!--<axis xyz="0.0 1.0 0.0"/>-->
 </joint>
 
 <joint name="Rev3" type="fixed">
   <origin rpy="0 0 0" xyz="-0.06 -0.0515 0.0325"/>
   <parent link="base_link"/>
   <child link="wheel_rb_1"/>
-  <!--<axis xyz="0.0 1.0 0.0"/>-->
 </joint>
 
 <joint name="Rev4" type="fixed">
   <origin rpy="0 0 0" xyz="-0.06 0.0515 0.0325"/>
   <parent link="base_link"/>
   <child link="wheel_lb_1"/>
-  <!--<axis xyz="0.0 1.0 0.0"/>-->
+</joint>
+-->
+
+
+
+<joint name="Rev1" type="continuous">
+  <origin rpy="0 0 0" xyz="0.06 -0.0515 0.0325"/>
+  <parent link="base_link"/>
+  <child link="wheel_rf_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
 </joint>
 
-<joint name="Rigid5" type="fixed">
-  <origin rpy="0 0 0" xyz="0.0 0.0 0.12"/>
+<joint name="Rev2" type="continuous">
+  <origin rpy="0 0 0" xyz="0.06 0.0515 0.0325"/>
   <parent link="base_link"/>
-  <child link="lidar_1"/>
+  <child link="wheel_lf_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
 </joint>
+
+<joint name="Rev3" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.06 -0.0515 0.0325"/>
+  <parent link="base_link"/>
+  <child link="wheel_rb_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Rev4" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.06 0.0515 0.0325"/>
+  <parent link="base_link"/>
+  <child link="wheel_lb_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+
 
 </robot>
