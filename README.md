@@ -1,7 +1,7 @@
 # aiscbot
 aiscbot 
 
-This is for Nilesh Kekare
+
 
 # INSTALLATION
 sudo apt-get install ros-melodic-move-base ros-melodic-amcl  ros-melodic-rqt-image-view ros-melodic-navigation ros-melodic-joint-state-publisher ros-melodic-robot-state-publisher ros-melodic-joy ros-melodic-teleop-twist-joy ros-melodic-teleop-twist-keyboard ros-melodic-urdf ros-melodic-xacro
