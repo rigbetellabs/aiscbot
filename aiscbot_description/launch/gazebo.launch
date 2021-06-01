@@ -7,7 +7,8 @@
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
   
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(find aiscbot_description)/worlds/rvbot_world.world"/>     
+    <!-- <arg name="world_name" value="$(find aiscbot_description)/worlds/rvbot_world.world"/>      -->
+    <arg name="world_name" value="$(find aiscbot_description)/worlds/area02_world.world"/>
     <arg name="paused" value="false"/>
     <arg name="use_sim_time" value="true"/>
     <arg name="gui" value="true"/>
